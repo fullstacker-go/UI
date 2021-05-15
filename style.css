@@ -26,7 +26,7 @@ a.nav-link.text-white:after {
   right: 0;
   width: 100%;
   height: 3px;
-  background-color: #df0e50;
+  background-color: #790c6a;
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transform: scaleX(0);
@@ -86,7 +86,7 @@ a.nav-link.text-white:hover:after {
     padding: 1rem 1rem;
   }
   .navbar-collapse .navbar-nav li a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -99,6 +99,7 @@ a.nav-link.text-white:hover:after {
 @media (max-width: 480px) {
   .hero-subtitle {
     text-align: center;
+    margin-top: 6em;
     font-size: 1.5rem;
   }
 }
@@ -123,13 +124,17 @@ a.nav-link.text-white:hover:after {
   background-size: cover;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .jumbotron.jumbotron-fluid {
+    height: 80vh;
+  }
+}
+
 .events-section {
-  background: #c33764;
+  background: #790c6a;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#1d2671), to(#df0e50));
-  background: linear-gradient(to right, #1d2671, #df0e50);
-  background: radial-gradient(circle at top right, #df0e50 10%, 30%, #0a0c65 70%);
+  background: radial-gradient(circle at top right, #790c6a 10%, 30%, #0a0c65 70%);
   position: relative;
   height: 100%;
   margin-top: -2rem;
@@ -138,6 +143,18 @@ a.nav-link.text-white:hover:after {
 .events-title {
   font-weight: 700;
   font-size: 5rem;
+  position: relative;
+}
+
+.events-title:after {
+  content: "WE OWN THE NIGHT";
+  position: absolute;
+  width: 100%;
+  color: white;
+  opacity: 0.9;
+  top: 30%;
+  left: 0;
+  font-size: 2rem;
 }
 
 @media (max-width: 480px) {
@@ -145,27 +162,12 @@ a.nav-link.text-white:hover:after {
     text-align: center;
     font-size: 3rem;
   }
-}
-
-.events-subtitle {
-  font-weight: 700;
-  font-size: 2rem;
-  position: absolute;
-  top: 38%;
-  left: 0;
-  opacity: 0.9;
-}
-
-@media (max-width: 480px) {
-  .events-subtitle {
-    text-align: center;
-    left: 18%;
+  .events-title:after {
     font-size: 1.5rem;
   }
 }
 
 .section-content {
-  position: relative;
   padding: 2rem 0;
 }
 
